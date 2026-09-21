@@ -304,3 +304,224 @@ body {
     }
 
 }
+
+/* ==============================
+   À PROPOS
+   ============================== */
+
+.about-section {
+    background-color: #ffffff;
+}
+
+
+.section-header {
+    max-width: 750px;
+
+    margin-bottom: 50px;
+}
+
+
+.section-subtitle {
+    color: #2563eb;
+
+    font-weight: bold;
+
+    margin-bottom: 10px;
+}
+
+
+.section-header h2 {
+    font-size: 38px;
+
+    line-height: 1.2;
+
+    margin-bottom: 0;
+}
+
+
+.about-content {
+    display: grid;
+
+    grid-template-columns: 1.5fr 1fr;
+
+    gap: 60px;
+
+    align-items: start;
+}
+
+
+.about-text p {
+    margin-bottom: 20px;
+
+    font-size: 17px;
+
+    color: #4b5563;
+}
+
+
+.about-info {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+
+.info-item {
+    padding: 20px;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 10px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 5px;
+}
+
+
+.info-item strong {
+    color: #111827;
+}
+
+
+.info-item span {
+    color: #6b7280;
+}
+
+
+/* ==============================
+   RESPONSIVE À PROPOS
+   ============================== */
+
+@media (max-width: 768px) {
+
+    .about-content {
+        grid-template-columns: 1fr;
+
+        gap: 40px;
+    }
+
+
+    .section-header h2 {
+        font-size: 30px;
+    }
+
+}
+
+
+
+/* ==============================
+   COMPÉTENCES
+   ============================== */
+
+.skills-section {
+    background-color: #f8fafc;
+}
+
+
+.skills-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 25px;
+}
+
+
+.skill-card {
+    background-color: #ffffff;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 12px;
+
+    padding: 30px;
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+
+.skill-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+
+.skill-icon {
+    width: 55px;
+
+    height: 55px;
+
+    margin-bottom: 20px;
+
+    border-radius: 10px;
+
+    background-color: #eff6ff;
+
+    color: #2563eb;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-weight: bold;
+}
+
+
+.skill-card h3 {
+    font-size: 22px;
+
+    margin-bottom: 10px;
+
+    color: #111827;
+}
+
+
+.skill-card p {
+    font-size: 16px;
+
+    margin-bottom: 20px;
+}
+
+
+.skill-tags {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+}
+
+
+.skill-tags span {
+    padding: 6px 12px;
+
+    background-color: #f3f4f6;
+
+    border-radius: 20px;
+
+    font-size: 14px;
+
+    color: #374151;
+}
+
+
+/* ==============================
+   RESPONSIVE COMPÉTENCES
+   ============================== */
+
+@media (max-width: 768px) {
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
