@@ -1,17 +1,129 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% extends 'portfolio/base.html' %}
 
-    <title>Diomande | Développeur d'applications</title>
-</head>
+{% block title %}
+    Accueil | Diomande
+{% endblock %}
 
-<body>
+{% block content %}
 
-    <h1>Bonjour, je suis Diomande Mamadou Pacôme</h1>
+<header class="hero">
 
-    <p>Développeur d'applications</p>
+    <nav class="navbar">
 
-</body>
-</html>
+        <a href="/" class="logo">
+            Diomande
+        </a>
+
+        <div class="nav-links">
+
+            <a href="#about">À propos</a>
+
+            <a href="#skills">Compétences</a>
+
+            <a href="#projects">Projets</a>
+
+            <a href="#contact">Contact</a>
+
+        </div>
+
+    </nav>
+
+
+    <div class="hero-content">
+
+        <div class="hero-text">
+
+            <p class="hero-introduction">
+                Bonjour, je suis
+            </p>
+
+            <h1>
+                Diomande Mamadou Pacôme
+            </h1>
+
+            <h2>
+                Développeur d'applications
+            </h2>
+
+            <p class="hero-description">
+                Je conçois et développe des applications web
+                avec Python et Django, avec l'objectif de créer
+                des solutions utiles, simples et adaptées aux besoins
+                des utilisateurs.
+            </p>
+
+
+            <div class="hero-buttons">
+
+                <a href="#projects" class="button primary-button">
+                    Voir mes projets
+                </a>
+
+                <a href="#contact" class="button secondary-button">
+                    Me contacter
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-image">
+
+            <div class="profile-placeholder">
+                DM
+            </div>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<section id="about" class="section">
+
+    <h2>À propos de moi</h2>
+
+    <p>
+        Je suis développeur d'applications et je m'intéresse
+        particulièrement au développement web, à Python et à Django.
+    </p>
+
+</section>
+
+
+<section id="skills" class="section">
+
+    <h2>Mes compétences</h2>
+
+    <p>
+        Python · Django · HTML · CSS · JavaScript · MySQL · Git · GitHub
+    </p>
+
+</section>
+
+
+<section id="projects" class="section">
+
+    <h2>Mes projets</h2>
+
+    <p>
+        Mes projets seront présentés ici.
+    </p>
+
+</section>
+
+
+<section id="contact" class="section">
+
+    <h2>Contact</h2>
+
+    <p>
+        Vous pouvez me contacter pour discuter d'un projet
+        ou d'une opportunité professionnelle.
+    </p>
+
+</section>
+
+{% endblock %}

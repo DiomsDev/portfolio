@@ -1,0 +1,35 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Portfolio de Diomande Mamadou Pacôme, développeur d'applications.">
+
+    <title>
+        {% block title %}
+            Diomande | Développeur d'applications
+        {% endblock %}
+    </title>
+
+    <link rel="stylesheet"
+          href="{% static 'portfolio/css/style.css' %}">
+
+</head>
+
+<body>
+
+    {% block content %}
+    {% endblock %}
+
+    <script src="{% static 'portfolio/js/script.js' %}"></script>
+
+</body>
+
+</html>
